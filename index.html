@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank</title>
+</head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+     body{
+         font-family: cursive;
+     }
+    .head_container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .headcontainer1 {
+        background-color: rgb(8, 8, 8);
+        color:white;
+        width: 20%;
+        height: 70px;
+        text-align: center;
+        padding-top: 18px;
+        padding-right: 170px;
+    }
+
+    .headcontainer2 {
+        background-color:rgb(8, 8, 8);
+;        color:white;
+        width: 45%;
+        height: 70px;
+        text-align: center;
+        padding-top: 10px;
+        font-size: 28px;
+    }
+
+    .headsub_container1 {
+        width: 35%;
+        height: 70px;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(8, 8, 8);
+        color:white;
+        font-size: 18px;
+       
+    }
+
+    .headsub_container2 {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #date {
+        margin-left: 110px;
+    }
+
+    #welcome {
+        margin-left: 80px;
+        margin-right: 40px;
+    }
+    .dropdown{
+        margin-left: 20px;
+        margin-bottom: 10px;
+    }
+    .main_container{
+        width: 65%;
+        height: 640px;
+         /* background-color: rgb(219, 223, 223); */
+         }
+    h1{
+        text-align: center;
+    }
+    .main_container1{
+        width: 95%;
+        height:400px ;
+        margin: 5px 22px;
+    }
+    .main_container2{
+        width: 95%;
+        height:160px ;
+        margin: 12px 22px;
+        background-color: rgb(217, 223, 223);
+        text-align: center;
+        font-size: 40px;
+        padding-top: 45px;
+        border: 2px solid black;
+        border-radius: 10px;
+    }
+    .mainContainer{
+        display: flex;
+    }
+    .aside{
+        width: 35%;
+        height: 640px;
+        display: flex;
+        flex-direction: column;
+        overflow-y: scroll;
+    }
+    .a{
+        width:99% ;
+        min-height: 107px;
+        background-color: rgb(217, 223, 223);
+        margin-top: 5px;
+        margin-left: 3px;
+        margin-right: 3px;
+        border: 2px solid black;
+        border-radius: 7px;
+    }
+    .footer p{
+        width: 100%;
+        height: 50px;
+        
+        margin-bottom: 0px;
+        text-align: center;
+        padding-top: 8px;
+        font-size: 25px;
+        color:black;
+    }
+    #v{
+        width: 100%;
+        height: 400px;
+        border: 2px solid black;
+        border-radius: 12px;
+    }
+    #f{
+        width: 250px;
+        height: 200px;
+        border: 2px solid black;
+        border-radius: 8px;
+    }
+    .bg{
+        background-color: rgb(217, 223, 223);
+        width: 98%;
+        border: 2px solid black;
+        border-radius: 7px;
+        margin:0px 13px ;
+        padding-top: 21px;
+    }
+    .bg1{
+        background-color: rgb(217, 223, 223);
+        border: 0px; 
+    }
+    #vid{
+        margin-top: 15px;
+        margin-bottom: 0px;
+        }
+</style>
+
+<body>
+    <div class="head_container">
+        <div class="headcontainer1"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-box" viewBox="0 0 16 16">
+                <path
+                    d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5 8 5.961 14.154 3.5 8.186 1.113zM15 4.239l-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923l6.5 2.6zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464L7.443.184z" />
+            </svg>
+        </div>
+        <div class="headcontainer2">
+            <span>some text</span>
+        </div>
+        <div class="headsub_container1">
+            <span id="date">Date:Sep 22 2021</span>
+            <div class="headsub_container2">
+                <span id="welcome">Welcome Harsha logout<span class="dropdown ">
+                        <a class="btn btn-danger dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Languages
+                        </a>
+
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">English</a></li>
+                            <li><a class="dropdown-item" href="#">Hindi</a></li>
+                            <li><a class="dropdown-item" href="#">Kannada</a></li>
+                        </ul>
+                    </span></span>
+            </div>
+        </div>
+    </div>
+    <div class="mainContainer">
+    <div class="main_container">
+        <h1>Text 1</h1>
+        <div class="main_container1"> <iframe id="v" class="d-inline-block embed-responsive-item" src="https://www.youtube.com/embed/3SsK-cxlj_w" frameborder="0"></iframe></div>
+        <div class="main_container2">text text text text</div>
+    </div>
+    <div class="aside">
+       <din class="a"></din>
+       <din class="a"></din>
+       <din class="a"></din>
+       <din class="a"></din>
+       <din class="a"></din>
+       <din class="a"></din>
+       <din class="a"></din>
+       <din class="a"></din>
+       <din class="a"></din>
+       
+    </div>
+</div>
+<h1 id="vid">Videos!!</h1>
+<div id="carouselExampleControls" class="carousel slide my-4" data-bs-ride="carousel">
+    <div class=" bg carousel-inner">
+        <div class=" my-4 carousel-item active">
+            <div class=" bg1 card d-inline-block  mx-1" style="width: 110px;">
+                <div class="d-inline-block embed-responsive embed-responsive-4by3  ">
+                   
+                </div>
+               
+              
+            </div>
+            <div class="card d-inline-block mx-3" >
+                <div class="d-inline-block embed-responsive embed-responsive-4by3  ">
+                    <iframe id="f" class="d-inline-block embed-responsive-item" src="https://www.youtube.com/embed/3SsK-cxlj_w" frameborder="0"></iframe>
+                </div>
+               
+             
+            </div>
+            <div class="card d-inline-block  mx-1" >
+                <div class="d-inline-block embed-responsive embed-responsive-4by3  ">
+                    <iframe id="f" class="d-inline-block embed-responsive-item" src="https://www.youtube.com/embed/3SsK-cxlj_w" frameborder="0"></iframe>
+                </div>
+               
+              
+            </div>
+            <div class="card d-inline-block mx-1" >
+                <div class="d-inline-block embed-responsive embed-responsive-4by3  ">
+                    <iframe id="f" class="d-inline-block embed-responsive-item" src="https://www.youtube.com/embed/3SsK-cxlj_w" frameborder="0"></iframe>
+                </div>
+            
+              
+            </div>
+            <div class="card d-inline-block mx-1" >
+                <div class="d-inline-block embed-responsive embed-responsive-4by3  ">
+                    <iframe id="f" class="d-inline-block embed-responsive-item" src="https://www.youtube.com/embed/3SsK-cxlj_w" frameborder="0"></iframe>
+                </div>
+           
+               
+            </div>
+            <div class="bg1 card d-inline-block  mx-1" style="width: 110px;">
+                <div class="d-inline-block embed-responsive embed-responsive-4by3  ">
+                   
+                </div>
+               
+              
+            </div>
+           </div>
+           <div class=" my-4 carousel-item ">
+            <div class="bg1 card d-inline-block  mx-1" style="width: 110px;">
+                <div class="d-inline-block embed-responsive embed-responsive-4by3  ">
+                   
+                </div>
+               
+              
+            </div>
+            <div class="card d-inline-block mx-3" >
+                <div class="d-inline-block embed-responsive embed-responsive-4by3  ">
+                    <iframe id="f" class="d-inline-block embed-responsive-item" src="https://www.youtube.com/embed/3SsK-cxlj_w" frameborder="0"></iframe>
+                </div>
+               
+             
+            </div>
+            <div class="card d-inline-block  mx-1" >
+                <div class="d-inline-block embed-responsive embed-responsive-4by3  ">
+                    <iframe id="f" class="d-inline-block embed-responsive-item" src="https://www.youtube.com/embed/3SsK-cxlj_w" frameborder="0"></iframe>
+                </div>
+               
+              
+            </div>
+            <div class="card d-inline-block mx-1" >
+                <div class="d-inline-block embed-responsive embed-responsive-4by3  ">
+                    <iframe id="f" class="d-inline-block embed-responsive-item" src="https://www.youtube.com/embed/3SsK-cxlj_w" frameborder="0"></iframe>
+                </div>
+            
+              
+            </div>
+            <div class="card d-inline-block mx-1" >
+                <div class="d-inline-block embed-responsive embed-responsive-4by3  ">
+                    <iframe id="f" class="d-inline-block embed-responsive-item" src="https://www.youtube.com/embed/3SsK-cxlj_w" frameborder="0"></iframe>
+                </div>
+           
+               
+            </div>
+            <div class="bg1 card d-inline-block  mx-1" style="width: 110px;">
+                <div class="d-inline-block embed-responsive embed-responsive-4by3  ">
+                   
+                </div>
+               
+              
+            </div>
+           </div>
+           <div class=" my-4 carousel-item ">
+            <div class="bg1 card d-inline-block  mx-1" style="width: 110px;">
+                <div class="d-inline-block embed-responsive embed-responsive-4by3  ">
+                   
+                </div>
+               
+              
+            </div>
+            <div class="card d-inline-block mx-3" >
+                <div class="d-inline-block embed-responsive embed-responsive-4by3  ">
+                    <iframe id="f" class="d-inline-block embed-responsive-item" src="https://www.youtube.com/embed/3SsK-cxlj_w" frameborder="0"></iframe>
+                </div>
+               
+             
+            </div>
+            <div class="card d-inline-block  mx-1" >
+                <div class="d-inline-block embed-responsive embed-responsive-4by3  ">
+                    <iframe id="f" class="d-inline-block embed-responsive-item" src="https://www.youtube.com/embed/3SsK-cxlj_w" frameborder="0"></iframe>
+                </div>
+               
+              
+            </div>
+            <div class="card d-inline-block mx-1" >
+                <div class="d-inline-block embed-responsive embed-responsive-4by3  ">
+                    <iframe id="f" class="d-inline-block embed-responsive-item" src="https://www.youtube.com/embed/3SsK-cxlj_w" frameborder="0"></iframe>
+                </div>
+            
+              
+            </div>
+            <div class="card d-inline-block mx-1" >
+                <div class="d-inline-block embed-responsive embed-responsive-4by3  ">
+                    <iframe id="f" class="d-inline-block embed-responsive-item" src="https://www.youtube.com/embed/3SsK-cxlj_w" frameborder="0"></iframe>
+                </div>
+           
+               
+            </div>
+            <div class="bg1 card d-inline-block  mx-1" style="width: 110px;">
+                <div class="d-inline-block embed-responsive embed-responsive-4by3  ">
+                   
+                </div>
+               
+              
+            </div>
+           </div>
+
+    </div>
+   
+
+    <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+<footer>
+    <div class="footer"> 
+        <p>Thanks for visiting</p>
+        
+      </div>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
